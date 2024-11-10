@@ -1,0 +1,13 @@
+.container{
+    margin-top: 4%;
+    background-image: url("./Suppier.png");
+    
+    padding: 10%;
+    border-radius: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: green;
+}

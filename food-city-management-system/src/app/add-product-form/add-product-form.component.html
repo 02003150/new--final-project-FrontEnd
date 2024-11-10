@@ -1,0 +1,21 @@
+
+    <div class="form-row col-10">
+      <h1>Product Form</h1>
+      <div class="form-group col-md-6">
+        
+        <input type="email" class="form-control"  placeholder="product id" [(ngModel)]="product.productId" >
+        <input type="email" class="form-control"  placeholder="product name" [(ngModel)]="product.productName" >
+        <input type="email" class="form-control"  placeholder="price" [(ngModel)]="product.price">
+        <input type="email" class="form-control"  placeholder="qty" [(ngModel)]="product.qty">
+        <input type="email" class="form-control"  placeholder="Date" [(ngModel)]="product.productAdddate" >
+        <input type="email" class="form-control"  placeholder="description" [(ngModel)]="product.description">
+      </div>
+    <button type="submit" class="btn btn-success" (click)="addProduct()">AddProduct</button>
+    <button type="submit" class="btn btn-success" (click)="deleteProduct(product.productId)" >Delete</button>   
+    <button type="submit" class="btn btn-success" (click)="searchProduct(product.productId)">Search</button> 
+    <button type="submit" class="btn btn-success" >Update</button>   
+  
+
+    </div>
+   
+

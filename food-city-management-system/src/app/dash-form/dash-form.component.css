@@ -1,0 +1,22 @@
+.d-flex{
+    margin-left: -70%;
+    background-color: rgb(67, 218, 25);
+    padding-bottom: 30%;  
+ }
+ .nav-item{
+     margin: 14%;
+     padding-bottom: 1.4%;
+     border-radius: 10%;
+     background-color: rgb(67, 218, 25);
+     border-color: rgb(0, 255, 51);
+     padding: 6%;
+     border-radius: 20%;
+     border-style:groove;
+     
+    
+ }
+
+ a{
+    text-decoration: none;
+    color: aliceblue;
+ }

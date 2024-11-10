@@ -1,0 +1,38 @@
+
+.carousel{
+  
+    margin-top:10%;
+    padding-bottom: 6%;
+}
+.d-block{
+  border-radius: 100%;
+  padding: 24%;
+    background-image: url("./happy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: double;
+    border-color: rgb(0, 255, 47);
+}
+.e-block{
+  border-radius: 100%;
+  padding: 24%;
+padding-left: 44%;
+padding-right: 44%;
+  background-image: url("./family.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style: double;
+  border-color: rgb(0, 255, 47);
+}
+
+.f-block{
+  border-radius: 100%;
+  padding: 24%;
+padding-left: 44%;
+padding-right: 44%;
+  background-image: url("./family1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style: double;
+  border-color: rgb(0, 255, 47);
+}

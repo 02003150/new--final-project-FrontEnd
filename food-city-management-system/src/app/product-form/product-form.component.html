@@ -1,0 +1,82 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-12">
+  <h1>PRODUCT FORM</h1>
+ 
+  <table class="table table-hover table-success table-striped  table-borderless">
+    <thead>
+      <tr>
+        <th scope="col">Product Id</th>
+        <th scope="col">Product Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">QTY</th>
+        <th scope="col">Product Add Date</th>
+        <th scope="col">Description</th>
+         <button1 [routerLink]="['/add-product-form']" type="button" class="btn btn-success"  >Manage</button1>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of productList;">
+        <th scope="row">{{product.productId}}</th>
+        <td>{{product.productName}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.qty}}</td>
+        <td>{{product.productAdddate}}</td>
+        <td>{{product.description}}</td>
+        <td><button class="btn btn-outline-danger"><i class="bi bi-trash3" (click)="deleteProduct(product.productId)" data-bs-whatever="@mdo"></i></button></td>
+        <td><button class="btn btn-outline-warning"><i class="bi bi-pencil-square" (click)="selectedUpdateProduct(product)" data-bs-toggle="modal" data-bs-target="#exampleModal"></i></button></td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+</div>
+
+
+
+     </div>
+     <div class="row">
+      
+     </div>
+  </div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+          <div class="mb-3">
+            <input type="text" class="form-control" id="recipient-name" [(ngModel)]="seletedProduct.productId" placeholder="id" disabled="true">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="recipient-name" [(ngModel)]="seletedProduct.productName" placeholder="name">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="recipient-name" [(ngModel)]="seletedProduct.price" placeholder="price">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="recipient-name" [(ngModel)]="seletedProduct.qty" placeholder="qty">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="recipient-name" [(ngModel)]="seletedProduct.productAdddate" placeholder="date">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="recipient-name" [(ngModel)]="seletedProduct.description" placeholder="description">
+          </div>
+        
+      </div>
+      <div class="modal-footer" >
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success  btn-close-white" (click)="updateProduct()" >Update Products</button>
+      </div>
+    </div>
+  </div>
+</div>

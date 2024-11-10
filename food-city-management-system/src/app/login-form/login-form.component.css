@@ -1,0 +1,11 @@
+form{
+    margin-top: 9%;
+    text-align: center;
+    background-image: url("loging-cover.png");   
+   padding: 8%;
+
+    border-radius: 10%;
+}
+.form-group{
+    padding: 6%;
+}
