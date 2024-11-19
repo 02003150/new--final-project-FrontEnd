@@ -1,36 +1,56 @@
-<div class="d-flex flex-column flex-shrink-0 p-3 " style="width: 280px;">
-  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-    
-  </a>
-  <hr>
-  <ul class="nav nav-pills flex-column mb-auto">
-    
-    <li class="nav-item" > 
-      <a [routerLink]="['/user-form']" >
-        Users
-      </a>
-    </li>
-    <li class="nav-item" > 
-      <a [routerLink]="['/oder-form']">
-        Oders
-      </a>
-    </li>
-    <li class="nav-item" > 
-      <a [routerLink]="['/product-form']">
-        Products
-      </a>
-    <li class="nav-item" > 
-      <a [routerLink]="['/customer-form']">
-        Customers
-      </a>
-    </li>
-    <li class="nav-item" > 
-      <a [routerLink]="['/supplier-form']">
-        Suppliers
-      </a>
-    </li>
-  </ul>
-  <hr>
   
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom ">
+      <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-success text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+      <div id="main">
+        <button class="openbtn" (click)="openNav()"><i class="bi bi-list"></i></button>
+        
+   
+      </div>  
+      </a>
+
+ <h1>Happy Food</h1>
+
+       
+
+      <ul class="nav nav-pills ">
+        
+        <li class="nav-item"><a href="#" class="nav-link text-danger ">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-danger">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-danger">Pricing</a></li>
+        <li class="nav-item"><a href="#"router class="nav-link text-danger bi bi-geo-alt" routerLink="location-page">Location</a></li>
+        <li class="nav-item"><a href="#" class="nav-link text-danger" routerLink="about-page">About</a></li>
+      </ul>
+    </header>
+
+<div id="mySidebar" class="sidebar">
+  
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()"><i class="bi bi-x-diamond-fill"></i></a>
+  
+  <div class="itm">
+  <a routerLink="user-form" >
+    Users
+  </a>
+</div>
+
+<div class="itm">
+  <a routerLink="oder-form">
+    Oders
+  </a>
+</div>
+  <div class="itm">
+  <a routerLink="product-form">
+    Products
+  </a>
+</div>
+  <div class="itm">
+  <a routerLink="customer-form">
+    Customers
+  </a>
+</div>
+  <div class="itm">
+  <a routerLink="supplier-form">
+    Suppliers
+  </a>
+  </div>
 </div>

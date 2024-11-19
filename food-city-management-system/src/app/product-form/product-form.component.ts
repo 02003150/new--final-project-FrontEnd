@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule, NgModel } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { Route, Router, RouterLink } from '@angular/router';
 import { AddProductFormComponent } from '../add-product-form/add-product-form.component';
 
 @Component({
@@ -12,11 +12,19 @@ import { AddProductFormComponent } from '../add-product-form/add-product-form.co
   templateUrl: './product-form.component.html',
   styleUrl: './product-form.component.css'
 })
-export class ProductFormComponent {
+export class ProductFormComponent implements OnInit{
   productList:any=[];
 
-  constructor(private http:HttpClient){
+
+ public btnAddProduct(){
+    this.router.navigate(["./dash-board/add-product-form"])
+  }
+
+  constructor(private http:HttpClient,private router : Router){
       this.loadProduct();
+  }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
   loadProduct(){
     this.http.get("http://localhost:8080/get-product").subscribe(data=>{
@@ -45,4 +53,5 @@ updateProduct(){
       })
       
   }
+  
 }

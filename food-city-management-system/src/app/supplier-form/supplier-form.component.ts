@@ -22,4 +22,5 @@ loadSupplier(){
   this.supplierList=data;
   })
 }
+
 }

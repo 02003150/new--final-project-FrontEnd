@@ -12,51 +12,65 @@ import { ProductFormComponent } from './product-form/product-form.component';
 import { AddProductFormComponent } from './add-product-form/add-product-form.component';
 import { ManageUsersFormComponent } from './manage-users-form/manage-users-form.component';
 import { LocationPageComponent } from './location-page/location-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { DashBoardComponent } from './dash-board/dash-board.component';
 
 export const routes: Routes = [
     {
-        path:'',
-        component: HomePageFormComponent
-    },
-    
-    {
-        path:'login-form',
+        path: "",
         component: LoginFormComponent
     },
     {
-        path:'user-form',
-        component: UserFormComponent
-    
+        path: "dash-board",
+        component: DashBoardComponent,
+        children: [
+            {
+                path: "",
+                component: HomePageFormComponent
+            },
+            {
+                path: "user-form",
+                component: UserFormComponent,
+            },
+            {
+                path: 'manage-users-form',
+                component: ManageUsersFormComponent
+            },
+            {
+                path: 'supplier-form',
+                component: SupplierFormComponent
+            },
+            {
+                path: 'oder-form',
+                component: OderFormComponent
+            },
+            {
+                path: 'customer-form',
+                component: CustomerFormComponent
+            },
+            {
+                path: 'product-form',
+                component: ProductFormComponent
+            },
+            {
+                path: 'location-page',
+                component: LocationPageComponent
+            },
+            {
+                path: 'about-page',
+                component: AboutPageComponent
+            },
+
+            {
+                path: 'add-product-form',
+                component: AddProductFormComponent
+            }
+
+        ]
+
     },
-    {
-        path:'supplier-form',
-        component: SupplierFormComponent
-    },
-    {
-        path:'oder-form',
-        component:OderFormComponent
-    },
-    {
-        path:'customer-form',
-        component:CustomerFormComponent
-    },
-    {
-        path:'product-form',
-        component:ProductFormComponent
-    },
-    {
-        path:'add-product-form',
-        component:AddProductFormComponent
-    },
-    {
-        path:'manage_users_form',
-        component:ManageUsersFormComponent
-    },
-    {
-        path:'location-page',
-        component:LocationPageComponent
-    }
-    
+
 ];
+
 
 
