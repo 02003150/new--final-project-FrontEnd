@@ -5,7 +5,7 @@ import { LoginFormComponent } from '../login-form/login-form.component';
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })

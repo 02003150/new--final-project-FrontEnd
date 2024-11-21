@@ -1,20 +1,30 @@
 
-    <form>
+    <div class="form-login">
       <div class="row">
         <div class="col-4"><img src="" alt=""></div>
         <div class="col-8" > <h1 class="text-success">Login</h1>
           <div class="form-group">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="email" placeholder="Enter email">
           </div>
           <div class="form-group">
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]="password" placeholder="Password">
            
           </div>
-         <button type="submit" class="btn btn-success" [routerLink]="['/dash-board']" >Submit</button></div>
+
+          
+        
+        
+        <div class="row">
+        <div class="col-7"><label for="create-account" routerLink="create-acconut">create Account</label></div>
+        
+        <div class="col-3"> <button type="submit" class="btn btn-success" (click)="btnLogInOnActoin()">login</button></div>
+      </div> 
+        </div>
          
       </div>
+     
       
-    </form>
+    </div>
 
 
 

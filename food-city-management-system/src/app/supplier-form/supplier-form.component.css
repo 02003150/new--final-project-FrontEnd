@@ -10,4 +10,9 @@
 h1{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: green;
+    text-align: center;
+}
+button{
+    border-color: rgb(43, 216, 12); 
+    
 }

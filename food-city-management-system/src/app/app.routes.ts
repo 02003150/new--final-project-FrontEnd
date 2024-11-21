@@ -14,11 +14,17 @@ import { ManageUsersFormComponent } from './manage-users-form/manage-users-form.
 import { LocationPageComponent } from './location-page/location-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { DashBoardComponent } from './dash-board/dash-board.component';
+import { ManageSuplierComponent } from './manage-suplier/manage-suplier.component';
+import { CreateAcconutComponent } from './create-acconut/create-acconut.component';
 
 export const routes: Routes = [
     {
         path: "",
         component: LoginFormComponent
+    },
+    {
+        path:'create-acconut',
+        component: CreateAcconutComponent
     },
     {
         path: "dash-board",
@@ -39,6 +45,10 @@ export const routes: Routes = [
             {
                 path: 'supplier-form',
                 component: SupplierFormComponent
+            },
+            {
+                path:'manage-suplier',
+                component:ManageSuplierComponent
             },
             {
                 path: 'oder-form',
